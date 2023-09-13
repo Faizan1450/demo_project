@@ -4,82 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>News Website by Faizan</title>
+    <title>Login Page</title>
   </head>
   <body>
-    <nav>
-      <div class="main-nav flex container">
-        <a href="#" onclick="reload()" class="company-logo">
-          <img src="./assets/scaliveNews.png" alt="Company Logo" />
-        </a>
-        <div class="nav-links">
-          <ul class="flex">
-            <li
-              id="bigboss"
-              onclick="onNavItemClick('bigboss')"
-              class="hover-link nav-item"
-            >
-              BigBoss
-            </li>
-            <li
-              id="finance"
-              onclick="onNavItemClick('finance')"
-              class="hover-link nav-item"
-            >
-              Finance
-            </li>
-            <li
-              id="politics"
-              onclick="onNavItemClick('politics')"
-              class="hover-link nav-item"
-            >
-              Politics
-            </li>
-            <li
-              id="technologies"
-              onclick="onNavItemClick('technologies')"
-              class="hover-link nav-item"
-            >
-              Technologies
-            </li>
-          </ul>
-        </div>
-        <div class="search-bar flex">
-          <input
-            type="text"
-            id="search-bar"
-            class="news-input"
-            placeholder="e.g. Science"
-          />
-          <button id="search-button" class="search-button">Search</button>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <div id="cards-container" class="cards-container container flex"></div>
-    </main>
+    <div class="container">
+      <h2 id="login-page">Login page</h2>
+      <div>
+        <!-- User name -->
+        <label for="name">User Name: </label>
+        <input type="text" id="name" />
 
-    <template id="template-news-card">
-      <div class="card">
-        <div class="card-header">
-          <img
-            id="news-img"
-            src="https://via.placeholder.com/400x200"
-            alt="News header"
-          />
-        </div>
-        <div class="card-content">
-          <h3 id="news-title">This is the title</h3>
-          <h6 id="news-source" class="news-source">End Gadget 26/08/2023</h6>
-          <p id="news-desc" class="news-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
-            veniam eaque hic aliquam ab provident molestiae nihil porro labore,
-            tempora expedita. Corporis accusantium ab, maxime quos cumque nam
-            suscipit neque.
-          </p>
-        </div>
+        <br />
+        <!-- Password -->
+        <label for="pass">Password: </label>
+        <input type="text" id="pass" />
+
+        <br>
+        <button id="btn">Submit</button>
       </div>
-    </template>
+      <div id="demo"></div>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
